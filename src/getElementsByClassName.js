@@ -4,7 +4,22 @@
 // };
 
 // But instead we're going to implement it from scratch:
-var getElementsByClassName = function(className
-) {
+var getElementsByClassName = function(className) {
   // your code here
+/*  var elements = document.getElementsByClassName('body');
+for(var i=0, l=elements.length; i<l; i++){
+ elements[i].style.backgroundColor = "green";
+}*/
+
+var nodeList = [];
+function test(node) {
+  if (_(node.classList).contains(className)) {
+    nodeList.push(node);
+  }
+  _(node.childNodes).forEach(function(child) {
+    test(child);
+  });
+}
+test(document.body);
+return nodeList;
 };

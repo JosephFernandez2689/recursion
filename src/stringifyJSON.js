@@ -21,8 +21,8 @@ var stringifyJSON = function(obj) {
      if (obj[0] === undefined)
        return '[]';
      else {
-       obj.forEach(function(el) {
-         arrVals.push(stringifyJSON(el));
+       obj.forEach(function(element) {
+         arrVals.push(stringifyJSON(element));
        });
        return '[' + arrVals + ']';
      }

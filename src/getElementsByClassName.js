@@ -6,10 +6,7 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className) {
   // your code here
-/*  var elements = document.getElementsByClassName('body');
-for(var i=0, l=elements.length; i<l; i++){
- elements[i].style.backgroundColor = "green";
-}*/
+
 
 var nodeList = [];
 function test(node) {

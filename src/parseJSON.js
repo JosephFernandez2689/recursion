@@ -29,9 +29,8 @@ var parseJSON = function(json) {
    }
  };
 
- // parseString() - innerParser
- // parse a "string" value
- // return the parsed string
+ // parseString() - inner Parser
+ // parse a "string" value then return the parsed string
  var parseString = () => {
    var str = "";
    var exception = {
